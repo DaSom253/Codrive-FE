@@ -1,5 +1,14 @@
+/* fonts */
+@font-face {
+    src : url("..fonts/IBMPlexSansKR-Regular.ttf");
+  }
+
+/* pages */
+/* @import "pages/mainpage.css"; */
+/*외부 css */
+
 * {
-    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: "ibm";
 }
 
 a {
@@ -7,7 +16,9 @@ a {
     color: inherit; /* 링크의 색상 제거 */
 }
 
-#header {
+/*사용 컬러 variables에 정리*/
+/* MainPage index.html*/
+#headerWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,32 +28,53 @@ a {
 
 #logo {
     color: #F7961B;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 700;
 }
 
 .headerTexts{
     padding-left: 10px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
-#headerText {
+.headerTextLogin{
+    padding-left: 0px;
+    font-size: 15px;
+}
+
+#shortLine {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+}
+
+#headerTextLoginWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 30px;
+}
+
+#headerTextWrapper {
     padding-left: 36%;
 }
 
-#indexMain{
+#indexMainWrapper{
     position: relative;
     width: 100%;
     height: 1000px;
     box-shadow: inset 0px 300px 250px #ffffff;
 }
 
-#backgroundImg {
+/* #backgroundImg {
     position: relative;
     z-index: -1;
-}
+} */
 
-#indexMainText {
+#indexMainTextWrapper {
     position: absolute;
     top: 20%;
     left: 30%;
@@ -50,12 +82,3 @@ a {
     font-weight: 700;
     justify-content: center;
 }
-
-#mainText1 {
-    display: flex;
-}
-
-#mainText2 {
-    display: flex;
-}
-

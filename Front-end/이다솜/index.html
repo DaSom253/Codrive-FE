@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <link rel="stylesheet" href="css/styles.css" >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codrive</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
-    </style>
-    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="header">
+    <div id="headerWrapper">
         <div>
             <a id="logo" href="index.html">Codrive</a>
         </div>
-        <div id="headerText">
+        <div id="headerTextWrapper">
             <a class="headerTexts" href="#">코딩공부</a>
             <a class="headerTexts" href="#">학교생활</a>
             <a class="headerTexts" href="main.html">게시판</a>
         </div>
-        <div>
-            <a class="headerTexts" href="#">로그인</a>
-            <a class="headerTexts" href="#">회원가입</a>
+        <div id="headerTextLoginWrapper">
+            <a class="headerTexts headerTextLogin" href="#">로그인</a>
+            <div id="shortLine">|</div>
+            <a class="headerTexts headerTextLogin" href="#">회원가입</a>
         </div>
     </div>
-    <div id="indexMain">
-        <img id="backgroundImg" width="100%" src="img/background.jpg" alt="#">
-        <div id="indexMainText"> 
+    <div id="indexMainWrapper">
+        <!-- <img id="backgroundImg" width="100%" src="img/background.jpg" alt="#"> -->
+        <div id="indexMainTextWrapper"> 
                 <div id="mainText1"><p style="color: #F7961B;">개발</p><p>고민,</p></div>
                 <div id="mainText2"><p style="color: #F7961B;">Codrive</p><p>에서 해결하세요.</p></div>
                 <button>로그인</button>
